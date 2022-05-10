@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#00BFFF" />
+    <meta name="navigation-bar-button-color" content="#00BFFF" />
+    <meta name="navigation-bar-button-border-color" content="#ffffff" />
+    <meta name="navigation-bar-button-hasshadow" content="false" />
+    <link href="reset.css" rel="stylesheet">
+    <link href="primos.css" rel="stylesheet">
+    <title>Contador Numérico</title>
+</head>
+
+<body>
+    <header>
+
+
+    </header>
+    <nav>
+
+    </nav>
+    <section>
+        <div class="text-align-center">
+        </div>
+        <article>
+            <div class="title-header text-align-center">
+                <h1>Verificador Numérico
+                    <h1>
+                        <p id="greenplanet"></p>
+            </div>
+            <br />
+
+            <label>Entre com um número:</label>
+            <br />
+            <br />
+            <input type='' id="contador" placeholder="000..." />
+            <br />
+            <br />
+            <div id="info" class="calculator-info text-align-center" /> Processando...
+            </div>
+            <br />
+            <input type="button" id="showinfobtn" value="Verificar Número" />
+            <script>
+                //Entrada de dados adaptada
+                // programa para checar se um número é ou não primo.
+                let planet = document.getElementById("greenplanet");
+                planet.innerHTML = "JavaScript";
+
+                function verificar() {
+                    let contador = document.getElementById("contador");
+                    let resultado = document.getElementById("info");
+                    let num = Number(contador.value);
+                    let number = num;
+                    resultado.textContent = number;
+                    let primo = true;
+
+                    if (num <= 0) {
+                        info.innerHTML = "Entre com um valor inteiro positivo";
+                        info.style.color = "red";
+                        info.style.textShadow = "1px 1px 2px white";
+                    }
+
+                    // verifica se o número é igual a 1
+                    if (number === 1) {
+                        info.innerHTML = number + " não é um número primo e nem é composto." + "<br/>";
+                        info.style.color = "red";
+                        info.style.textShadow = "-1px 1px 2px white";
+
+                    } else if (number > 1) {
+
+
+                        for (let i = 2; i < number; i++) {
+                            if (number % i == 0) {
+                                primo = false;
+                                break;
+                            }
+                        }
+
+
+
+                        if (primo) {
+                            info.innerHTML = number + " é um número primo " + "<br/>";
+                            info.style.color = "red";
+                            info.style.textShadow = "-1px 1px 2px white";
+
+                        } else if (number % 2 === 0) {
+                            info.innerHTML = number + " é um número par " + "<br/>";
+                            info.style.color = "red";
+                            info.style.textShadow = "-1px 1px 2px white";
+
+                        } else {
+                            info.innerHTML = number + " é um número ímpar" + "<br/>";
+                            info.style.color = "red";
+                            info.style.textShadow = "-1px 1px 2px white";
+
+                        }
+
+                    }
+
+                }
+
+                let showinfobtn = document.getElementById('showinfobtn');
+                showinfobtn.addEventListener("click", verificar);
+            </script>
+        </article>
+    </section>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

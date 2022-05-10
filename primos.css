@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: #00bfff;
+    color: white;
+}
+
+input[type="text"],
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+}
+
+article {
+    background-color: #00bfff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 1px white;
+    padding: 20px;
+    max-width: 480px;
+    margin: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+
+label,
+select {
+    font-style: bold;
+    font-size: 20px;
+}
+
+input,
+select {
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 1px white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-style: bold;
+    font-size: 25px;
+    padding: 5px;
+    background-color: white;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+}
+
+input[type="button"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #00bfff;
+    color: white;
+    padding: 5px 25px;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.title-header {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px white;
+    text-shadow: -1px 1px 2px black;
+    padding: 3px;
+}
+
+.calculator-info {
+    border-radius: 20px;
+    text-shadow: -1px 1px 2px black;
+    padding: 3px;
+    font-size: 20px;
+    display: inline;
+}
